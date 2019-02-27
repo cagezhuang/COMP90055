@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C3C9DCC1ED3AB4200B8B5FA /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1C3C9DCA1ED3AB4200B8B5FA /* main.mm */; };
+		1C99111C1ED3B0E600A6BFB9 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C99111B1ED3B0E600A6BFB9 /* MainStoryboard_iPhone.storyboard */; };
+		1CA5EB931ED3ABFB00247A34 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA5EB921ED3ABFB00247A34 /* CoreMedia.framework */; };
+		1CB47D491ED3AD1700DF7666 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CB47D481ED3AD1700DF7666 /* AVFoundation.framework */; };
+		1CDB2D491ED3A9CD007929E9 /* AdultImageRecognitorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB2D431ED3A9CD007929E9 /* AdultImageRecognitorAppDelegate.m */; };
+		1CDB2D4A1ED3A9CD007929E9 /* RealTimeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB2D451ED3A9CD007929E9 /* RealTimeViewController.mm */; };
+		471C264022257DE400AA8DC7 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 471C263F22257DE400AA8DC7 /* UIImage+fixOrientation.m */; };
+		471C26432225A28C00AA8DC7 /* Mobilenet_v1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 471C26422225A28C00AA8DC7 /* Mobilenet_v1.tflite */; };
+		471C26452225A8D600AA8DC7 /* Globals.mm in Sources */ = {isa = PBXBuildFile; fileRef = 471C26442225A8D600AA8DC7 /* Globals.mm */; };
+		471C26472225C0A000AA8DC7 /* Inception_v3_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 471C26462225C0A000AA8DC7 /* Inception_v3_labels.txt */; };
+		471C26492225C0D200AA8DC7 /* Mobilenet_v1_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 471C26482225C0D200AA8DC7 /* Mobilenet_v1_labels.txt */; };
+		AC3BB41720114C400084552C /* Inception_v3.tflite in Resources */ = {isa = PBXBuildFile; fileRef = AC3BB41620114C400084552C /* Inception_v3.tflite */; };
+		AD1C85452202A874004624EA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AD1C85442202A874004624EA /* Default-568h@2x.png */; };
+		FA90103D22128515005B023C /* HomeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA90103C22128515005B023C /* HomeViewController.mm */; };
+		FA90104322128D06005B023C /* ImageViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FA90104222128D06005B023C /* ImageViewController.mm */; };
+		FA9010452212BBDF005B023C /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA9010442212BBDF005B023C /* Vision.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C0D73481ECCC41B008C1DAB /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		1C0D734A1ECCC460008C1DAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1C3C9DCA1ED3AB4200B8B5FA /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		1C564C0D1ED3A92E00087306 /* AIR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AIR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C99111B1ED3B0E600A6BFB9 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		1CA45FFE1ECCC356002FA6A4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1CA5EB921ED3ABFB00247A34 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1CB47D481ED3AD1700DF7666 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1CDB2D421ED3A9CD007929E9 /* AdultImageRecognitorAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdultImageRecognitorAppDelegate.h; sourceTree = "<group>"; };
+		1CDB2D431ED3A9CD007929E9 /* AdultImageRecognitorAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdultImageRecognitorAppDelegate.m; sourceTree = "<group>"; };
+		1CDB2D441ED3A9CD007929E9 /* RealTimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealTimeViewController.h; sourceTree = "<group>"; };
+		1CDB2D451ED3A9CD007929E9 /* RealTimeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RealTimeViewController.mm; sourceTree = "<group>"; };
+		1CDB2D4D1ED3AA35007929E9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA8BF92C84895BFE59D8236 /* libPods-tflite_camera_example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-tflite_camera_example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BC5BE4BBD09374D3E98F082 /* Pods-tflite_camera_example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite_camera_example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tflite_camera_example/Pods-tflite_camera_example.debug.xcconfig"; sourceTree = "<group>"; };
+		471C263E22257DE400AA8DC7 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		471C263F22257DE400AA8DC7 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		471C26412225907E00AA8DC7 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		471C26422225A28C00AA8DC7 /* Mobilenet_v1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Mobilenet_v1.tflite; sourceTree = "<group>"; };
+		471C26442225A8D600AA8DC7 /* Globals.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = Globals.mm; sourceTree = "<group>"; };
+		471C26462225C0A000AA8DC7 /* Inception_v3_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Inception_v3_labels.txt; sourceTree = "<group>"; };
+		471C26482225C0D200AA8DC7 /* Mobilenet_v1_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mobilenet_v1_labels.txt; sourceTree = "<group>"; };
+		55ED318E8D29C8AFEF03DF1E /* Pods-tflite_camera_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tflite_camera_example.release.xcconfig"; path = "Pods/Target Support Files/Pods-tflite_camera_example/Pods-tflite_camera_example.release.xcconfig"; sourceTree = "<group>"; };
+		AC3BB41620114C400084552C /* Inception_v3.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inception_v3.tflite; sourceTree = "<group>"; };
+		AD1C85442202A874004624EA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FA90103B22128515005B023C /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FA90103C22128515005B023C /* HomeViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HomeViewController.mm; sourceTree = "<group>"; };
+		FA90104122128D06005B023C /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		FA90104222128D06005B023C /* ImageViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ImageViewController.mm; sourceTree = "<group>"; };
+		FA9010442212BBDF005B023C /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C564C0A1ED3A92E00087306 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9010452212BBDF005B023C /* Vision.framework in Frameworks */,
+				1CB47D491ED3AD1700DF7666 /* AVFoundation.framework in Frameworks */,
+				1CA5EB931ED3ABFB00247A34 /* CoreMedia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D7686C331131624F4454A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA9010442212BBDF005B023C /* Vision.framework */,
+				1CB47D481ED3AD1700DF7666 /* AVFoundation.framework */,
+				1CA5EB921ED3ABFB00247A34 /* CoreMedia.framework */,
+				1C0D734A1ECCC460008C1DAB /* CoreGraphics.framework */,
+				1C0D73481ECCC41B008C1DAB /* CoreImage.framework */,
+				1CA45FFE1ECCC356002FA6A4 /* UIKit.framework */,
+				3BA8BF92C84895BFE59D8236 /* libPods-tflite_camera_example.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E9FC355632FB928EA23BEED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BC5BE4BBD09374D3E98F082 /* Pods-tflite_camera_example.debug.xcconfig */,
+				55ED318E8D29C8AFEF03DF1E /* Pods-tflite_camera_example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		591157921CF4011C00C31E3A = {
+			isa = PBXGroup;
+			children = (
+				471C26442225A8D600AA8DC7 /* Globals.mm */,
+				471C26412225907E00AA8DC7 /* Globals.h */,
+				471C263E22257DE400AA8DC7 /* UIImage+fixOrientation.h */,
+				471C263F22257DE400AA8DC7 /* UIImage+fixOrientation.m */,
+				FA90104122128D06005B023C /* ImageViewController.h */,
+				FA90104222128D06005B023C /* ImageViewController.mm */,
+				FA90103B22128515005B023C /* HomeViewController.h */,
+				FA90103C22128515005B023C /* HomeViewController.mm */,
+				AD1C85442202A874004624EA /* Default-568h@2x.png */,
+				1C99111B1ED3B0E600A6BFB9 /* MainStoryboard_iPhone.storyboard */,
+				1C3C9DCA1ED3AB4200B8B5FA /* main.mm */,
+				1CDB2D4D1ED3AA35007929E9 /* Info.plist */,
+				1CDB2D421ED3A9CD007929E9 /* AdultImageRecognitorAppDelegate.h */,
+				1CDB2D431ED3A9CD007929E9 /* AdultImageRecognitorAppDelegate.m */,
+				1CDB2D441ED3A9CD007929E9 /* RealTimeViewController.h */,
+				1CDB2D451ED3A9CD007929E9 /* RealTimeViewController.mm */,
+				59A3CFF31CF4E68100C4259F /* data */,
+				5911579C1CF4011C00C31E3A /* Products */,
+				3E9FC355632FB928EA23BEED /* Pods */,
+				24D7686C331131624F4454A0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5911579C1CF4011C00C31E3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C564C0D1ED3A92E00087306 /* AIR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59A3CFF31CF4E68100C4259F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				471C26482225C0D200AA8DC7 /* Mobilenet_v1_labels.txt */,
+				471C26462225C0A000AA8DC7 /* Inception_v3_labels.txt */,
+				471C26422225A28C00AA8DC7 /* Mobilenet_v1.tflite */,
+				AC3BB41620114C400084552C /* Inception_v3.tflite */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C564C0C1ED3A92E00087306 /* AIR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C564C351ED3A92E00087306 /* Build configuration list for PBXNativeTarget "AIR" */;
+			buildPhases = (
+				66DAEAAEE9EF6550C3A061E0 /* [CP] Check Pods Manifest.lock */,
+				1C564C091ED3A92E00087306 /* Sources */,
+				1C564C0A1ED3A92E00087306 /* Frameworks */,
+				1C564C0B1ED3A92E00087306 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AIR;
+			productName = tflite_camera_example;
+			productReference = 1C564C0D1ED3A92E00087306 /* AIR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		591157931CF4011C00C31E3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Google;
+				TargetAttributes = {
+					1C564C0C1ED3A92E00087306 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = LAW5VKSDQY;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 591157961CF4011C00C31E3A /* Build configuration list for PBXProject "AIR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 591157921CF4011C00C31E3A;
+			productRefGroup = 5911579C1CF4011C00C31E3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C564C0C1ED3A92E00087306 /* AIR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C564C0B1ED3A92E00087306 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3BB41720114C400084552C /* Inception_v3.tflite in Resources */,
+				471C26492225C0D200AA8DC7 /* Mobilenet_v1_labels.txt in Resources */,
+				1C99111C1ED3B0E600A6BFB9 /* MainStoryboard_iPhone.storyboard in Resources */,
+				471C26472225C0A000AA8DC7 /* Inception_v3_labels.txt in Resources */,
+				471C26432225A28C00AA8DC7 /* Mobilenet_v1.tflite in Resources */,
+				AD1C85452202A874004624EA /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66DAEAAEE9EF6550C3A061E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tflite_camera_example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C564C091ED3A92E00087306 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471C264022257DE400AA8DC7 /* UIImage+fixOrientation.m in Sources */,
+				FA90104322128D06005B023C /* ImageViewController.mm in Sources */,
+				1CDB2D4A1ED3A9CD007929E9 /* RealTimeViewController.mm in Sources */,
+				1CDB2D491ED3A9CD007929E9 /* AdultImageRecognitorAppDelegate.m in Sources */,
+				471C26452225A8D600AA8DC7 /* Globals.mm in Sources */,
+				1C3C9DCC1ED3AB4200B8B5FA /* main.mm in Sources */,
+				FA90103D22128515005B023C /* HomeViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1C564C361ED3A92E00087306 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BC5BE4BBD09374D3E98F082 /* Pods-tflite_camera_example.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = LAW5VKSDQY;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kage.camera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = arm64;
+			};
+			name = Debug;
+		};
+		1C564C371ED3A92E00087306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55ED318E8D29C8AFEF03DF1E /* Pods-tflite_camera_example.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = LAW5VKSDQY;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kage.camera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = arm64;
+			};
+			name = Release;
+		};
+		591157B01CF4011D00C31E3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		591157B11CF4011D00C31E3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C564C351ED3A92E00087306 /* Build configuration list for PBXNativeTarget "AIR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C564C361ED3A92E00087306 /* Debug */,
+				1C564C371ED3A92E00087306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		591157961CF4011C00C31E3A /* Build configuration list for PBXProject "AIR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				591157B01CF4011D00C31E3A /* Debug */,
+				591157B11CF4011D00C31E3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 591157931CF4011C00C31E3A /* Project object */;
+}
